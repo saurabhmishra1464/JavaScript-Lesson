@@ -1,0 +1,36 @@
+
+When we run javascript program then the execution box is created.
+
+This execution context is created in two phases :
+
+1st phase: Memory Creation: JavaScript will allocate memory to all the variables and 
+functions.
+
+It stores value as undefined for the variables inside memory space.
+It stores whole code of the function inside memory space.   
+
+
+
+Second Phase: code execution: The variables inside memory is being assigned with the values.
+
+When a function is invoked or called a new execution context is created.
+
+When we run the whole program the global execution is created but for function a separate 
+execution context is created.
+
+As soon as the function return the value, the execution context which was created for 
+a function will be deleted.
+
+Also when the whole execution of the code is done the global execution context will also be deleted.
+
+
+Call stack where the execution context is managed. This call stack 
+is only for managing the execution context. 
+
+When a function is invoked a e1 is created in stack.
+
+When the function returns the value. the e1 gets deleted and the control again comes to the
+Global Execution Context.
+
+After the whole execution is done the call stack is empty. 	The global execution
+context is also gone from the call stack.
